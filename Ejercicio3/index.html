@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+
+<body>
+    <div>
+        <!-- Presupuesto -->
+        <label for="">Presupuesto</label>
+        <select id="budget">
+            <option name="budget" value="50"  selected>$50</option>
+            <option name="budget" value="100">$100</option>
+            <option name="budget" value="250">$250</option>
+            <option name="budget" value="500">$500</option>
+        </select>
+        <br><br>
+
+        <!-- Formulario -->
+        <label for="">Nombre Producto</label>
+        <input type="text" name="product" id="product">
+        <br><br>
+        <label for="">Cantidad</label>
+        <input type="number" name="cant" id="cant">
+        <br><br>
+        <label for="">Precio</label>
+        <input type="number" name="price" id="price">
+        <br><br>
+        <!-- Botón -->
+        <button onclick="formProcess()">Send</button>
+    </div>
+    <br>
+
+    <div id="result"></div>
+    <br>
+    <table border="1" id="myTable">
+        <tr>
+            <td>Compra</td>
+            <td>Cantidad</td>
+            <td>Precio</td>
+            <td>Subtotal</td>
+            <td>Estado</td>
+        </tr>
+        <tr id="row_0">
+            
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
